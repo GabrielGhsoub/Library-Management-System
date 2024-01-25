@@ -1,0 +1,8 @@
+server:
+  port: 8080
+
+spring:
+  profiles:
+    active: mysql  # Change this to 'mysql' or 'h2' as needed
+  application:
+    name: LIBRARY-MANAGEMENT-SYSTEM

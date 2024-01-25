@@ -1,0 +1,12 @@
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/LibraryManagementSystem?&createDatabaseIfNotExist=true
+    username: root
+    password: toor
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  flyway:
+    locations: classpath:sql/mysql
+  mybatis:
+    type-aliases-package: com.assessment.LibraryManagementSystem
+    configuration:
+      map-underscore-to-camel-case: true
