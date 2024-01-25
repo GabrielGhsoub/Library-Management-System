@@ -15,7 +15,7 @@ This project is a Library Management System API developed using Spring Boot. It 
 
 ## Technologies
 - Spring Boot
-- Spring Data JPA
+- MyBatis
 - Spring Security 
 - AspectJ 
 - Caching Mechanisms
