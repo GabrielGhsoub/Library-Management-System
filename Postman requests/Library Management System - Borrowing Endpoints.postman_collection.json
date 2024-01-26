@@ -1,0 +1,62 @@
+{
+	"info": {
+		"_postman_id": "83777e8f-b3c2-45e3-9c7d-13b8d841329a",
+		"name": "Library Management System - Borrowing Endpoints",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "13639797"
+	},
+	"item": [
+		{
+			"name": "Borrow Book",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/borrow/{{bookId}}/patron/{{patronId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"borrow",
+						"{{bookId}}",
+						"patron",
+						"{{patronId}}"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Return Book",
+			"request": {
+				"method": "PUT",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8080/api/return/{{bookId}}/patron/{{patronId}}",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"api",
+						"return",
+						"{{bookId}}",
+						"patron",
+						"{{patronId}}"
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"variable": [
+		{
+			"key": "patronId",
+			"value": "1"
+		}
+	]
+}
