@@ -6,3 +6,9 @@ spring:
     active: mysql  # Change this to 'mysql' or 'h2' as needed
   application:
     name: LIBRARY-MANAGEMENT-SYSTEM
+    
+management:
+  endpoints:
+    web:
+      exposure:
+        include: '*'
